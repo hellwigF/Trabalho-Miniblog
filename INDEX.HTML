@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+       MINIBLOG
+    </h1>
+    <h3>
+        Felipe Hellwig<br>
+        Ra: 123123
+    </h3>
+    <h2>
+        Postagens
+    </h2>
+    <h5>
+        <table class="center" border="1">
+            <thead>
+                <th>Data</th>
+                <th>Postagem</th>
+                <th>Autor</th>
+                <th>Ações</th>
+            </thead>
+            <tbody>
+                {posts}
+            </tbody>
+        </table>
+    </h5>
+    <h6>
+    <form action="comentario.php" method="post">
+        <fieldset>
+            <label>Nome da postagem</label>
+            <input type="text" name="postagem" id="postagem">
+            <label>Autor</label>
+            <input type="text" name="autor" id="autor">
+            <button>
+                Criar postagem
+            </button>
+        </fieldset>
+    </form>
+    </h6>
+
+</body>
+</html>
